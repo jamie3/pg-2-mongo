@@ -21,9 +21,7 @@ SLOT_NAME="test_slot_wal2json"
 
 This project relies on Postgres and MongoDB. We recommend using Docker compose.
 
-1. Install Postgres and Mongo
-
-    - `docker compose up -d`
+1. Install Postgres and Mongo run `docker compose up -d`
 
 Create the replication slot
 
@@ -41,7 +39,7 @@ ALTER SYSTEM SET wal_level = logical;
 
 ## Run Locally
 
-Run the following command `yarn dev`
+Run the following command `docker compose up -d` to start the databases and `yarn dev` to run the app.
 
 ## Run Production
 
