@@ -10,6 +10,7 @@ services:
     # This will ensure our data persiststo our local project when we stop/start docker
     volumes:
       - ./postgres-data:/var/lib/postgresql/data
+      #- ./postgres-extensions:/usr/share/postgresql/14/extension/wal2json.control
     ports:
       - 5432:5432
 

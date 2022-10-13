@@ -45,6 +45,10 @@ const plugin = new Wal2JsonPlugin({
  */
 service.on('data', (lsn: string, log: Wal2Json.Output) => {
     // Do something what you want.
+    console.log(log);
+
+    console.log(log.change[0].columnvalues);
+
     // log.change.filter((change) => change.kind === 'insert').length;
 });
 
