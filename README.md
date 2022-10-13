@@ -34,7 +34,7 @@ ALTER SYSTEM SET wal_level = logical;
 
 ## Run Locally
 
-Run the following command `yarn dev`
+Run the following command `docker compose up -d` to start the databases and `yarn dev` to run the app.
 
 ## Run Production
 
