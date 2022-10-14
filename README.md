@@ -7,17 +7,7 @@ Example project that shows how to subscribe to data changes in Postgres and save
 1. Install node packages. Run `yarn install`
 1. Create the prisma files. `yarn prisma:generate`
 1. Run `yarn install` followed by `yarn prisma:generate`
-1. Create a `.env` file with the following
-
-```
-MONGODB_URL="mongodb://localhost:21717"
-
-POSTGRES_DB="pg_2_mongo"
-POSTGRES_USER="jamie"
-POSTGRES_PASSWORD="password"
-
-SLOT_NAME="test_slot_wal2json"
-```
+1. Create a `.env` file with the following. See `.env.example`.
 
 This project relies on Postgres and MongoDB. We recommend using Docker compose.
 

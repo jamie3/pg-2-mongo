@@ -56,6 +56,7 @@ service.on('error', (err: Error) => {});
 
 // Start subscribing to data change events.
 const main = () => {
+    console.log('subscribing to data changes');
     service
         .subscribe(plugin, slotName)
         .catch((e) => {
